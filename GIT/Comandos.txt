@@ -1,0 +1,26 @@
+# todos los comandos de git
+
+git init                        # Inicializa un nuevo repositorio Git
+git clone [url]                 # Clona un repositorio remoto
+git status                      # Muestra el estado de los archivos
+git add [archivo]               # Añade archivos al área de preparación (staging)
+git add .                       # Añade todos los archivos al área de preparación
+git commit -m "mensaje"         # Realiza un commit con un mensaje
+git log                         # Muestra el historial de commits
+git diff                        # Muestra los cambios realizados
+git branch                      # Lista las ramas
+git branch [nombre]             # Crea una nueva rama
+git checkout [rama]             # Cambia a otra rama
+git merge [rama]                # Fusiona una rama con la actual
+git pull                        # Descarga y fusiona cambios del repositorio remoto
+git push                        # Sube los cambios al repositorio remoto
+git remote add origin [url]     # Añade un repositorio remoto
+git remote -v                   # Muestra los repositorios remotos
+git fetch                       # Descarga cambios del remoto sin fusionar
+git reset [archivo]             # Quita archivos del área de preparación
+git rm [archivo]                # Elimina archivos del repositorio
+git stash                       # Guarda cambios temporales
+git stash pop                   # Recupera los cambios guardados
+git tag [nombre]                # Crea una etiqueta (tag)
+git config --global user.name "Nombre"         # Configura el nombre de usuario
+git config --global user.email "email@ejemplo.com"   # Configura el email de usuario
