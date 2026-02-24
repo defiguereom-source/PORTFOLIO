@@ -1,0 +1,65 @@
+# Lista de Comandos de Docker
+
+## Comandos de Gestión (Management Commands)
+
+- `docker builder` - Gestiona builders
+- `docker buildx` - Construye con BuildKit
+- `docker compose` - Define y ejecuta aplicaciones multi-contenedor
+- `docker config` - Gestiona configuraciones de Docker
+- `docker container` - Gestiona contenedores
+- `docker context` - Gestiona contextos
+- `docker image` - Gestiona imágenes
+- `docker manifest` - Gestiona manifiestos de imagen
+- `docker network` - Gestiona redes
+- `docker node` - Gestiona nodos de Swarm
+- `docker plugin` - Gestiona plugins
+- `docker secret` - Gestiona secretos
+- `docker service` - Gestiona servicios
+- `docker stack` - Gestiona stacks
+- `docker swarm` - Gestiona Swarm
+- `docker system` - Gestiona Docker
+- `docker trust` - Gestiona confianza de contenido
+- `docker volume` - Gestiona volúmenes
+
+## Comandos (Commands)
+
+- `docker attach` - Adjunta entrada/salida estándar local a un contenedor en ejecución
+- `docker build` - Construye una imagen desde un Dockerfile
+- `docker commit` - Crea una nueva imagen desde los cambios de un contenedor
+- `docker cp` - Copia archivos/carpetas entre un contenedor y el sistema de archivos local
+- `docker create` - Crea un nuevo contenedor
+- `docker diff` - Inspecciona cambios en el sistema de archivos de un contenedor
+- `docker events` - Obtiene eventos en tiempo real del servidor
+- `docker exec` - Ejecuta un comando en un contenedor en ejecución
+- `docker export` - Exporta el contenido del sistema de archivos de un contenedor como un archivo tar
+- `docker history` - Muestra el historial de una imagen
+- `docker images` - Lista imágenes
+- `docker import` - Importa el contenido de un archivo tar para crear una imagen del sistema de archivos
+- `docker info` - Muestra información del sistema
+- `docker inspect` - Devuelve información de bajo nivel sobre objetos Docker
+- `docker kill` - Mata uno o más contenedores en ejecución
+- `docker load` - Carga una imagen desde un archivo tar o STDIN
+- `docker login` - Inicia sesión en un registro Docker
+- `docker logout` - Cierra sesión en un registro Docker
+- `docker logs` - Obtiene los logs de un contenedor
+- `docker pause` - Pausa todos los procesos dentro de uno o más contenedores
+- `docker port` - Lista asignaciones de puertos o un puerto específico para el contenedor
+- `docker ps` - Lista contenedores
+- `docker pull` - Descarga una imagen o un repositorio desde un registro
+- `docker push` - Sube una imagen o un repositorio a un registro
+- `docker rename` - Renombra un contenedor
+- `docker restart` - Reinicia uno o más contenedores
+- `docker rm` - Elimina uno o más contenedores
+- `docker rmi` - Elimina una o más imágenes
+- `docker run` - Ejecuta un comando en un nuevo contenedor
+- `docker save` - Guarda una o más imágenes en un archivo tar
+- `docker search` - Busca imágenes en Docker Hub
+- `docker start` - Inicia uno o más contenedores detenidos
+- `docker stats` - Muestra estadísticas de uso de recursos de contenedores en vivo
+- `docker stop` - Detiene uno o más contenedores en ejecución
+- `docker tag` - Crea un tag TARGET_IMAGE que refiere a SOURCE_IMAGE
+- `docker top` - Muestra los procesos en ejecución de un contenedor
+- `docker unpause` - Reanuda todos los procesos dentro de uno o más contenedores
+- `docker update` - Actualiza configuración de uno o más contenedores
+- `docker version` - Muestra la versión de Docker
+- `docker wait` - Bloquea hasta que uno o más contenedores se detengan, luego imprime sus códigos de salida
