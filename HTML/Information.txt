@@ -1,0 +1,7 @@
+En esta carpeta se podrá observar de forma estructurada el progreso de mi aprendizaje en HTML. 
+Aunque ya cuento con conocimientos sólidos y podría considerarme con un nivel avanzado en HTML, CSS y JavaScript, 
+por compromiso académico y como parte del proceso formativo del curso, volveré a desarrollar cada uno de los ejercicios y prácticas desde cero.
+
+Más allá de cumplir con los requisitos del programa, este proceso también funcionará como un repaso integral que me permitirá reforzar fundamentos, 
+optimizar buenas prácticas y consolidar conceptos clave que forman parte de mi base técnica. De esta manera, no solo evidenciaré el avance dentro del curso, sino que también 
+fortaleceré mis habilidades y mi dominio en el desarrollo web frontend en general.
