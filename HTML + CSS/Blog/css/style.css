@@ -1,5 +1,76 @@
+/*----------------------------------------------------
+Diseños general 
+------------------------------------------------------*/
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
+    margin: 0;
     background-color: black;
     color: white;
 }
 
+.center{
+    width: 400px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------------------
+Diseños card 
+------------------------------------------------------*/    
+header{
+    padding: 10px;
+    background-color: #1A1A1A;
+    text-align: center;
+}
+
+.card{
+    margin: 20px;
+    padding: 20px;
+    background-color: #1A1A1A;
+    border-radius: 5px;
+}
+.card h2{
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #fff;
+}
+
+/*----------------------------------------------------
+Animacion Card
+------------------------------------------------------*/   
+section article{
+    transition: all 0.3s ease;
+}
+
+section article:hover{
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.35);
+    cursor: pointer;
+}
+
+/*----------------------------------------------------
+Footer
+------------------------------------------------------*/   
+
+footer{
+    padding: 20px;
+    background-color: #1A1A1A;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    transition: color 0.4s ease;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover{
+    color: #8A2BE2;
+
+}
