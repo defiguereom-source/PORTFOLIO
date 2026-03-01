@@ -1,0 +1,163 @@
+/*------------------------------------------
+Diseños Cuerpo
+-------------------------------------------*/
+body{
+    margin: 0;
+    color: #2F2F2F;
+    background-color: #efe8dc;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 h2 h3{
+    font-family: "Playfair Display", serif;
+}
+
+.center{
+    width: 400px;
+    margin: 0 auto;
+}
+
+a{
+    color: #efe8dc;
+    text-decoration: none;  
+    transition: all 0.3s ease;
+}
+
+/*------------------------------------------
+Diseños navbar
+-------------------------------------------*/
+nav{
+    background-color: #3E4E3C;
+    color: #efe8dc;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0; 
+}
+
+nav ul li:first-child{
+    margin-right: auto;  
+}
+
+nav ul li{
+    margin-left: 20px;      
+}
+
+li h1{
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li img{
+    width: 30px;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #aaaaaa;
+}
+
+/*------------------------------------------
+Diseños Banner
+-------------------------------------------*/
+
+.container-banner img{
+    width: 100%;
+    height: 500px;
+}
+
+/*------------------------------------------
+Diseños Menu
+-------------------------------------------*/
+
+.titule{
+    text-align: center;
+    margin-top: 0;
+    color: #efe8dc;
+    padding: 20px;
+    background-color: #2F2F2F;
+}
+
+button{
+    background-color: #3E4E3C;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #efe8dc;
+    transition: all 0.4s ease;
+}
+
+.card button{
+    margin-top: auto;
+}
+
+button:hover{
+    background-color: #2F2F2F;
+}
+
+article.card img{
+    max-width:250px;
+    border-radius: 5px;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    gap: 20px;            
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;             
+    flex-direction: column;     
+    transition: all 0.3s ease;
+}
+
+.card img{
+  margin: 0 auto;
+}
+
+.card h4{
+    margin-top: auto;       
+    font-weight: bold;
+}
+
+.price{
+    margin-top: auto;       
+    font-weight: bold;
+    font-size: 18px;
+    color: #3E4E3C;
+}
+
+.card button{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------------
+Diseños Footer
+-------------------------------------------*/
+footer{
+    background-color: #000;
+    color: #efe8dc;
+    text-align: center;
+    padding: 20px;
+}
