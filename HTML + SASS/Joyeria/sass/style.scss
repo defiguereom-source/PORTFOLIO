@@ -1,6 +1,7 @@
 //Use
 @use "variables";
 @use "navbar";
+@use "banner-menu";
 
 // Global Styles
 * {
@@ -11,6 +12,7 @@
 }
 
 body {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: variables.$white-color;
     color: variables.$primary-color;
