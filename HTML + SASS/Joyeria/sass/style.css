@@ -87,7 +87,8 @@ nav a:hover {
 .container-cards .card img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container-cards .card .card-body {
   padding: 20px;
@@ -149,6 +150,4 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #F8F9FA;
   color: #0A1F44;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
