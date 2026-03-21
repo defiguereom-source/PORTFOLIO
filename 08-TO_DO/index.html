@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TO DO</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>ToDo App</h1>
+        
+        <form action="" id="formulario">
+            
+            <input id="input" autofocus type="text" placeholder="Ingrese tarea">
+
+            <button type="submit">Agregar</button>
+        </form>
+
+        <div id="lista-tareas"></div>
+
+    </div>
+
+    <template id="template_alert">
+            <div>
+                <p>Tarea #1</p>
+                <h1>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-minus"></i>
+                    <i class="fa-solid fa-rotate-left"></i>
+                </h1>
+            </div>
+    </template>
+
+</body>
+<script src="js/script.js"></script>
+</html>
