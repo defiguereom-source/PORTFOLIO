@@ -1,0 +1,23 @@
+{
+    "nombre": "Daniel E.",
+    "apellido": "Figuereo Mendez",
+    "edad": 18,
+    "lenguajes":["python","JavaScript","C#"],
+    
+    "experiencia":[
+        {
+            "empresa":"KW-Capital",
+            "antiguedad": "1 año"
+        },
+        {
+            "empresa":"Omega-Tech",
+            "antiguedad": "1 mes"
+        }
+    ],
+
+    "direccion": {
+        "calle":"Francisco del rosario sanchez",
+        "numero":"809-590-2350",
+        "colonia":"NY"
+    }
+}
