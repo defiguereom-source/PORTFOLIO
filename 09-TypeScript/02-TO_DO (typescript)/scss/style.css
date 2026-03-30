@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e8e8e8;
+  font-family: "DM Mono", monospace;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  padding: 60px 20px;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255, 255, 255, 0.015) 39px, rgba(255, 255, 255, 0.015) 40px);
+}
+
+.container {
+  width: 100%;
+  max-width: 580px;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: #e8e8e8;
+  margin-bottom: 6px;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #c8f04a;
+  margin-top: 10px;
+  margin-bottom: 36px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+form input#input {
+  flex: 1;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+  color: #e8e8e8;
+  font-family: "DM Mono", monospace;
+  font-size: 0.85rem;
+  padding: 14px 16px;
+  outline: none;
+  letter-spacing: 0.03em;
+  transition: border-color 0.2s, background 0.2s;
+}
+form input#input::-moz-placeholder {
+  color: #555;
+  font-style: italic;
+}
+form input#input::placeholder {
+  color: #555;
+  font-style: italic;
+}
+form input#input:focus {
+  border-color: #c8f04a;
+  background: #1c1c1c;
+}
+form button[type=submit] {
+  background: #c8f04a;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 2px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  padding: 14px 24px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s, transform 0.1s;
+}
+form button[type=submit]:hover {
+  opacity: 0.85;
+}
+form button[type=submit]:active {
+  transform: scale(0.97);
+}
+
+#lista-tareas {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container_tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+  padding: 16px 18px;
+  animation: slideIn 0.2s ease forwards;
+  transition: background 0.2s, border-color 0.2s;
+}
+.container_tarea:hover {
+  background: #1c1c1c;
+  border-color: #333;
+}
+.container_tarea p {
+  font-size: 0.88rem;
+  color: #e8e8e8;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 16px;
+}
+.container_tarea.completada {
+  background: transparent;
+  border-color: #1e1e1e;
+}
+.container_tarea.completada p {
+  color: #4a4a4a;
+  text-decoration: line-through;
+}
+.container_tarea h1 {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  margin: 0;
+}
+.container_tarea h1::after {
+  display: none;
+}
+
+.fas {
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.4;
+  transition: color 0.15s, transform 0.15s, opacity 0.15s;
+}
+.fas:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.fas.fa-circle-check:hover {
+  color: #c8f04a;
+}
+.fas.fa-circle-minus:hover {
+  color: #ff4545;
+}
+.fas.fa-rotate-left:hover {
+  color: #555;
+}
+
+.alert-darck {
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 24px 0;
+  text-align: center;
+  border: 1px dashed #2a2a2a;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 2px;
+}/*# sourceMappingURL=style.css.map */
