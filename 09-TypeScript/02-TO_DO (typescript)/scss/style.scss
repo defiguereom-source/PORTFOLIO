@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap');
+
+// ── Variables ──────────────────────────────────────────
+$bg:          #0d0d0d;
+$surface:     #141414;
+$surface-2:   #1c1c1c;
+$border:      #2a2a2a;
+$accent:      #c8f04a;
+$text:        #e8e8e8;
+$text-muted:  #555;
+$danger:      #ff4545;
+$done-text:   #4a4a4a;
+$radius:      2px;
+
+$font-display: 'Bebas Neue', sans-serif;
+$font-mono:    'DM Mono', monospace;
+
+// ── Mixins ─────────────────────────────────────────────
+@mixin flex($align: center, $justify: flex-start, $gap: 0) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin surface($bg: $surface, $border: $border) {
+  background: $bg;
+  border: 1px solid $border;
+  border-radius: $radius;
+}
+
+// ── Reset ──────────────────────────────────────────────
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ── Base ───────────────────────────────────────────────
+body {
+  background-color: $bg;
+  color: $text;
+  font-family: $font-mono;
+  min-height: 100vh;
+  @include flex(flex-start, center);
+  padding: 60px 20px;
+
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 39px,
+    rgba(255, 255, 255, 0.015) 39px,
+    rgba(255, 255, 255, 0.015) 40px
+  );
+}
+
+// ── Container ──────────────────────────────────────────
+.container {
+  width: 100%;
+  max-width: 580px;
+}
+
+// ── Título ─────────────────────────────────────────────
+h1 {
+  font-family: $font-display;
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: $text;
+  margin-bottom: 6px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: $accent;
+    margin-top: 10px;
+    margin-bottom: 36px;
+  }
+}
+
+// ── Formulario ─────────────────────────────────────────
+form {
+  @include flex(center, flex-start, 10px);
+  margin-bottom: 32px;
+
+  input#input {
+    flex: 1;
+    @include surface($surface, $border);
+    color: $text;
+    font-family: $font-mono;
+    font-size: 0.85rem;
+    padding: 14px 16px;
+    outline: none;
+    letter-spacing: 0.03em;
+    transition: border-color 0.2s, background 0.2s;
+
+    &::placeholder {
+      color: $text-muted;
+      font-style: italic;
+    }
+
+    &:focus {
+      border-color: $accent;
+      background: $surface-2;
+    }
+  }
+
+  button[type="submit"] {
+    background: $accent;
+    color: $bg;
+    border: none;
+    border-radius: $radius;
+    font-family: $font-display;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding: 14px 24px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s, transform 0.1s;
+
+    &:hover  { opacity: 0.85; }
+    &:active { transform: scale(0.97); }
+  }
+}
+
+// ── Lista ──────────────────────────────────────────────
+#lista-tareas {
+  @include flex(stretch, flex-start);
+  flex-direction: column;
+  gap: 2px;
+}
+
+// ── Tarea ──────────────────────────────────────────────
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.container_tarea {
+  @include flex(center, space-between);
+  @include surface($surface, $border);
+  padding: 16px 18px;
+  animation: slideIn 0.2s ease forwards;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: $surface-2;
+    border-color: #333;
+  }
+
+  p {
+    font-size: 0.88rem;
+    color: $text;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    flex: 1;
+    padding-right: 16px;
+  }
+
+  // Estado completada
+  &.completada {
+    background: transparent;
+    border-color: #1e1e1e;
+
+    p {
+      color: $done-text;
+      text-decoration: line-through;
+    }
+  }
+
+  // Contenedor de iconos
+  h1 {
+    font-size: 1rem;
+    @include flex(center, flex-end, 14px);
+    margin: 0;
+
+    &::after { display: none; }
+  }
+}
+
+// ── Iconos ─────────────────────────────────────────────
+.fas {
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.4;
+  transition: color 0.15s, transform 0.15s, opacity 0.15s;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  &.fa-circle-check:hover  { color: $accent; }
+  &.fa-circle-minus:hover  { color: $danger; }
+  &.fa-rotate-left:hover   { color: $text-muted; }
+}
+
+// ── Vacío ──────────────────────────────────────────────
+.alert-darck {
+  font-size: 0.8rem;
+  color: $text-muted;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 24px 0;
+  text-align: center;
+  border: 1px dashed $border;
+  border-radius: $radius;
+}
+
+// ── Scrollbar ──────────────────────────────────────────
+::-webkit-scrollbar {
+  width: 4px;
+
+  &-track { background: $bg; }
+  &-thumb {
+    background: $border;
+    border-radius: 2px;
+  }
+}
