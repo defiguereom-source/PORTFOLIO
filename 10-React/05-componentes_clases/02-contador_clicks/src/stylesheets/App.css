@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+  font-family: "DM Mono", monospace;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contador {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1;
+  color: #f0f0f0;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.boton-click {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: #b8f558;
+  color: #0e0e0e;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 36px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.boton-click:hover {
+  background: rgb(200.3661016949, 247.3050847458, 126.4949152542);
+}
+.boton-click:active {
+  transform: scale(0.95);
+}
+
+.boton-reiniciar {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #5a5a5a;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  padding: 13px 24px;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.boton-reiniciar:hover {
+  border-color: #5a5a5a;
+  color: #f0f0f0;
+}
+.boton-reiniciar:active {
+  transform: scale(0.95);
+  background: #1a1a1a;
+}/*# sourceMappingURL=App.css.map */
