@@ -1,0 +1,21 @@
+<section>
+    @if(isLoggedIn){
+        <p>Bienvenido, {{userName}}</p>
+        <img (click)="greet()" src="https://github.com/defiguereom-source.png" alt="photo">
+        
+        <app-game 
+        (addFavoriteEvent)="getFavorite($event)"
+        username={{userName}}></app-game>
+
+        @if(fav !== ''){
+            <p>Tu juego favorito es {{fav}}</p>
+        }
+    }
+    @else {
+        <p>Inicia Sesion</p>
+        <button (click)="isLoggedIn = true">Iniciar Sesion</button>
+    }
+
+
+</section>
+
