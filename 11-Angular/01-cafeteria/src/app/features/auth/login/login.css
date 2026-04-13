@@ -1,0 +1,101 @@
+/* CONTENEDOR */
+.container {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    background: var(--cream);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    margin: auto;
+    margin-top: 2%;
+}
+
+/* PANEL IZQUIERDO */
+.left-panel {
+    width: 50%;
+    background: linear-gradient(135deg, var(--coffee-medium), var(--coffee-dark));
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-panel h1 {
+    font-size: 2rem;
+}
+
+.left-panel p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* FORMULARIOS */
+.form-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--coffee-dark);
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--coffee-light);
+    background: transparent;
+    outline: none;
+    color: var(--coffee-dark);
+}
+
+input:focus {
+    border-bottom: 2px solid var(--gold);
+}
+
+/* BOTÓN */
+button {
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: none;
+    background: var(--gold);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+
+button:hover {
+    background: var(--coffee-dark);
+}
+
+/* SWITCH */
+.switch {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: var(--coffee-medium);
+}
+
+.switch:hover {
+    text-decoration: underline;
+}
