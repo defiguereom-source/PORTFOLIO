@@ -1,0 +1,73 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<nav class="navbar">
+  <div class="navbar-container">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">
+        <span class="logo-title">Aroma</span>
+        <span class="logo-subtitle">Café & Frappé</span>
+      </div>
+    </a>
+
+    <!-- Menu -->
+    <ul class="nav-menu" [class.active]="menuOpen">
+      <li class="nav-item">
+        <a href="#inicio"
+           class="nav-link"
+           [class.active]="activeSection === 'inicio'"
+           (click)="setActive('inicio'); closeMenu()">Inicio</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#menu"
+           class="nav-link"
+           [class.active]="activeSection === 'menu'"
+           (click)="setActive('menu'); closeMenu()">Menú</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#nosotros"
+           class="nav-link"
+           [class.active]="activeSection === 'nosotros'"
+           (click)="setActive('nosotros'); closeMenu()">Nosotros</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#galeria"
+           class="nav-link"
+           [class.active]="activeSection === 'galeria'"
+           (click)="setActive('galeria'); closeMenu()">Galería</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#contacto"
+           class="nav-link"
+           [class.active]="activeSection === 'contacto'"
+           (click)="setActive('contacto'); closeMenu()">Contacto</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#reservar" class="cta-button">Reservar Mesa</a>
+      </li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="hamburger"
+         (click)="toggleMenu()"
+         [class.active]="menuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Decorative -->
+<div class="coffee-bean bean-1">☕</div>
+<div class="coffee-bean bean-2">☕</div>
+<div class="coffee-bean bean-3">☕</div>
+

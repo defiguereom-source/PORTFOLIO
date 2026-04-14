@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --coffee-dark: #2C1810;
+    --coffee-medium: #5D4037;
+    --coffee-light: #8D6E63;
+    --cream: #F5E6D3;
+    --gold: #D4A574;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--cream) 0%, #E8D5C4 100%);
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 80px; 
+}
+
+main {
+    flex: 1;
+}
