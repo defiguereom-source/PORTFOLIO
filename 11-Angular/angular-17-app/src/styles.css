@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    color-scheme: light dark;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    height: 100vh;
+    margin: 0;
+}
